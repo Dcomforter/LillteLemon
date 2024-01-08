@@ -15,6 +15,7 @@ class Category(models.Model):
     def __str__(self):
         return f"{self.title}"
 
+# Menu Item model
 class MenuItem(models.Model):
     title = models.CharField(max_length=255, db_index=True)
     price = models.DecimalField(max_digits=6, decimal_places=2, db_index=True)
